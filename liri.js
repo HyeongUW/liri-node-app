@@ -98,19 +98,31 @@ function concertThis(searchTerm) {
     axios
         .get(searchURL)
         .then(function(response) {
-            console.log("----------------------------");
-            
-            
-            for(var i = 0; i < response.data.length; i++) {
-                //console.log(response.data[i]);   
-                console.log((i + 1) + ".    Venue: ", response.data[i].venue.name);
-                console.log("      City:  ", response.data[i].venue.city);
-                console.log("      Date:  ", moment(response.data[i].datetime).format("MM/DD/YYYY"));
+            fs.readFile("log.txt", "utf8", function(err, data) {
+                // If there's an error reading the file, we log it and return immediately
+                if (err) {
+                  return console.log(err);
+                }
+                fs.appendFileSync("log.txt", "----------------------------\n");
+                fs.appendFileSync("log.txt", ("concert-this: " + searchTerm + " -> executed\n"));
+
+                for(var i = 0; i < response.data.length; i++) {
+                    console.log("----------------------------");
+                    
+                    console.log((i + 1) + ".    Venue: ", response.data[i].venue.name);
+                    fs.appendFileSync("log.txt", ((i + 1) + ".    Venue: " + response.data[i].venue.name + "\n"));
+                    
+                    console.log("      City:  ", response.data[i].venue.city);
+                    fs.appendFileSync("log.txt", ("      City:  " + response.data[i].venue.city + "\n"));
+                    
+                    console.log("      Date:  ", moment(response.data[i].datetime).format("MM/DD/YYYY"));
+                    fs.appendFileSync("log.txt", ("      Date:  " + moment(response.data[i].datetime).format("MM/DD/YYYY") + "\n"));
+
+                    console.log("----------------------------");
+                }
+                fs.appendFileSync("log.txt", "----------------------------\n");
                 
-                
-            }
-            console.log("----------------------------");
-            
+            });
         })
   
   
@@ -153,32 +165,41 @@ function spotifyThisSong(searchTerm) {
     spotify
         .search({ type: 'track', query: searchTerm })
         .then(function(response) {
-            //console.log(response); 
-            //console.log(response.tracks.items);
-            //console.log(response.tracks.items.length);
-            //console.log(response.tracks.items[0].album.artists); 
-            
-
-            
-            /* console.log("Artist: ");
-            console.log("Song: ");
-            console.log("Preview: ", response.tracks.items[1].preview_url);
-            console.log("Album: ",  response.tracks.items[i].album.name) */
-            
-             for(var i = 0; i < response.tracks.items.length; i++) {
-                console.log("// Item " + (i + 1) + " ----------------------");
-                //console.log(response.tracks.items[i].album.artists); 
-                
-                
-                console.log("Artist: ");
-                console.log("Song: ");
-                console.log("Preview: ", response.tracks.items[1].preview_url);
-                console.log("Album: ",  response.tracks.items[i].album.name)
-                
 
 
-                console.log("\n");
-            } 
+
+            fs.readFile("log.txt", "utf8", function(err, data) {
+                // If there's an error reading the file, we log it and return immediately
+                if (err) {
+                  return console.log(err);
+                }
+
+                fs.appendFileSync("log.txt", "----------------------------\n");
+                fs.appendFileSync("log.txt", ("spotify-this-song: " + searchTerm + " -> executed\n"));
+
+                for(var i = 0; i < response.tracks.items.length; i++) {
+                    console.log("----------------------------");
+                    
+                    console.log("Item" + (i + 1) + ".    Artist: " + "\n");
+                    fs.appendFileSync("log.txt", ("Item" + (i + 1) + ".    Artist: " + "\n"));
+                    
+                    console.log("Song: ");
+                    fs.appendFileSync("log.txt", ("      Song:  " + "\n"));
+
+                    console.log("Preview: ", response.tracks.items[1].preview_url);
+                    fs.appendFileSync("log.txt", ("      Preview:  " + response.tracks.items[1].preview_url + "\n"));
+
+                    console.log("Album: ",  response.tracks.items[i].album.name)
+                    fs.appendFileSync("log.txt", ("      Album:  " + response.tracks.items[i].album.name + "\n"));
+
+
+                
+
+                    console.log("----------------------------");
+                }
+                fs.appendFileSync("log.txt", "----------------------------\n");
+                
+            });            
         })
         .catch(function(err) {
             console.error('Error occurred: ' + err); 
@@ -214,7 +235,7 @@ function movieThis(searchTerm) {
             //console.log(response.data.Raitings);
 
 
-            console.log("----------------------------");
+            /* console.log("----------------------------");
             console.log("Title: ", response.data.Title);
             console.log("Year: ", response.data.Year);
             console.log("IMDB Rating: ", response.data.imdbRating);
@@ -224,8 +245,44 @@ function movieThis(searchTerm) {
             console.log("Plot: ", response.data.Plot);
             console.log("Actors: ", response.data.Actors);
             
-            console.log("----------------------------");
-            
+            console.log("----------------------------"); */
+
+            fs.readFile("log.txt", "utf8", function(err, data) {
+                // If there's an error reading the file, we log it and return immediately
+                if (err) {
+                  return console.log(err);
+                }
+
+                fs.appendFileSync("log.txt", "----------------------------\n");
+                fs.appendFileSync("log.txt", ("movie-this: " + searchTerm + " -> executed\n"));
+
+                console.log("Title: ", response.data.Title);
+                fs.appendFileSync("log.txt", ("Title: " + response.data.Title + "\n"));
+
+                console.log("Year: ", response.data.Year);
+                fs.appendFileSync("log.txt", ("Year: " + response.data.Year + "\n"));
+
+                console.log("IMDB Rating: ", response.data.imdbRating);
+                fs.appendFileSync("log.txt", ("IMDB Rating: " + response.data.imdbRating + "\n"));
+
+                //console.log("Rotten Tomatoes: ", response.data.Raitings);
+                //fs.appendFileSync("log.txt", ("Rotten Tomatoes: " + response.data.Raitings + "\n"));
+                
+                console.log("Country: ", response.data.Country);
+                fs.appendFileSync("log.txt", ("Country: " + response.data.Country + "\n"));
+
+                console.log("Language: ", response.data.Language);
+                fs.appendFileSync("log.txt", ("Language: " + response.data.Language + "\n"));
+                
+                console.log("Plot: ", response.data.Plot);
+                fs.appendFileSync("log.txt", ("Plot: " + response.data.Plot + "\n"));
+
+                console.log("Actors: ", response.data.Actors);
+                fs.appendFileSync("log.txt", ("Actors: " + response.data.Actors + "\n"));
+
+                fs.appendFileSync("log.txt", "----------------------------\n");
+                
+            });                       
         })
   
   

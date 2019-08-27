@@ -1,0 +1,102 @@
+----------------------------
+concert-this: russ -> executed
+1.    Venue: Nelson W. Wolff Municipal Stadium
+      City:  San Antonio
+      Date:  10/26/2019
+2.    Venue: O2 Academy Glasgow
+      City:  Glasgow
+      Date:  11/15/2019
+----------------------------
+----------------------------
+spotify-this-song: what is love? -> executed
+Item1.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  The Album
+Item2.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  Summer Nights
+Item3.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  Agent Provocateur
+Item4.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  What Is Love? (Deluxe Edition)
+Item5.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  What Is Love? (Deluxe Edition)
+Item6.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  What Is Love? (Deluxe Edition)
+Item7.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  Spoonfed
+Item8.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  What Is Love? (Deluxe Edition)
+Item9.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  A Star Is Born Soundtrack
+Item10.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  A Star Is Born Soundtrack (Without Dialogue)
+Item11.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  Discography
+Item12.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  Straight From The Soul
+Item13.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  What Is Love? (Deluxe Edition)
+Item14.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  What Is Love
+Item15.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  What Is Love? (Deluxe Edition)
+Item16.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  Original Soundtrack from Season 1 of Empire (Deluxe)
+Item17.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  What Is Love? (Deluxe Edition)
+Item18.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  This Is What The Truth Feels Like
+Item19.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  Chloe
+Item20.    Artist: 
+      Song:  
+      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
+      Album:  What Is Love?
+----------------------------
+----------------------------
+movie-this: avengers -> executed
+Title: The Avengers
+Year: 2012
+IMDB Rating: 8.1
+Country: USA
+Language: English, Russian, Hindi
+Plot: Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+Actors: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
+----------------------------
