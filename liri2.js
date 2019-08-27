@@ -6,7 +6,6 @@ var keys = require("./keys.js");
     // Axios package
 var axios = require("axios");
 var fs = require("fs");
-var moment = require("moment");
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 
@@ -49,8 +48,7 @@ var searchTerm = "";
 for(var i = 1; i < splitedInput.length; i++) {
     searchTerm += " " + splitedInput[i];
 }
-searchTerm = searchTerm.substring(1, searchTerm.length);
-//console.log(searchTerm);
+searchTerm = searchTerm.substring(2, searchTerm.length - 1);
 
 programChooser(splitedInput[0], searchTerm);
 //console.log("LowerCase: ", commandInput);
@@ -83,6 +81,16 @@ function programChooser(nameOfFunction, searchTerm) {
     }
 }
 
+/* if(commandInput === "concert-this") {
+    concertThis();
+} else if(commandInput === "spotify-this-song") {
+    spotifyThisSong();
+} else if(commandInput === "movie-this") {
+    movieThis();
+} else {
+    // commandInput === "do-what-it-says"
+    doWhatItSays();
+} */
 //---------------------------------------------------
 
 // 4. Implementing each function
@@ -91,7 +99,7 @@ function programChooser(nameOfFunction, searchTerm) {
 function concertThis(searchTerm) {
     console.log("concert-this executed");
     // end point: "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
-    console.log("Search Term: " + searchTerm);
+    // searchTerm;
     var searchURL = "https://rest.bandsintown.com/artists/" + searchTerm + "/events?app_id=codingbootcamp"
     // console.log(searchURL);
 
@@ -99,16 +107,27 @@ function concertThis(searchTerm) {
         .get(searchURL)
         .then(function(response) {
             console.log("----------------------------");
-            
-            
-            for(var i = 0; i < response.data.length; i++) {
-                //console.log(response.data[i]);   
-                console.log((i + 1) + ".    Venue: ", response.data[i].venue.name);
-                console.log("      City:  ", response.data[i].venue.city);
-                console.log("      Date:  ", moment(response.data[i].datetime).format("MM/DD/YYYY"));
-                
-                
+            //console.log("Response: ", response);
+            //console.log("----------------------------");
+            // If the axios was successful...   
+            // Then log the body from the site!
+            //console.log("Response Data: ", response.headers.date);
+
+            //console.log(typeof response.data.venue{name} );  
+
+            /* 
+            for(var key in response.data.Venue) {
+                if(typeof response.data.Venue[key] !== 'function') {
+                    console.log(response.data.Venue[key]);
+                }
             }
+            
+ */
+            console.log(response.data[0].venue.name);
+            /* 
+            for(var i = 0; i < response.data.length; i++) {
+                console.log("Venue: ", response.data[i].venue);
+            } */
             console.log("----------------------------");
             
         })
@@ -144,7 +163,7 @@ function concertThis(searchTerm) {
         // The album that the song is from
 function spotifyThisSong(searchTerm) {
     console.log("spotifyThisSong executed");
-    console.log("Search Term: " + searchTerm);
+    
     
     
     spotify
@@ -229,7 +248,6 @@ function spotifyThisSong(searchTerm) {
 
 function movieThis(searchTerm) {
     console.log("movieThis executed");
-    console.log("Search Term: " + searchTerm);
     var searchURL = "http://www.omdbapi.com/?t=" + searchTerm + "&y=&plot=short&apikey=trilogy";
     // console.log(searchURL);
 
@@ -237,10 +255,10 @@ function movieThis(searchTerm) {
         .get(searchURL)
         .then(function(response) {
             //console.log("----------------------------");
-            console.log(response.data);
+            //console.log(response.data.Raitings);
 
 
-            console.log("----------------------------");
+            /* console.log("----------------------------");
             console.log("Title: ", response.data.Title);
             console.log("Year: ", response.data.Year);
             console.log("IMDB Rating: ", response.data.imdbRating);
@@ -251,7 +269,7 @@ function movieThis(searchTerm) {
             console.log("Actors: ", response.data.Actors);
 
             
-            console.log("----------------------------");
+            console.log("----------------------------"); */
             
         })
   
