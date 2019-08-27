@@ -29,7 +29,8 @@ information about the searched movie.
 * Navigate in to the folder where `liri.js` is using command line program you choose.
     * If you want to search for the event of a artist
     1. node liri.js concert-this `artist/band name here`
-    ![landing-page](assets/images/wireframe_trend01.png)
+
+    ![landing-page](assets/images/1a. concert-this example command)
 
     * If you want to search for the related information of the song you like
     1. node liri.js spotify-this-song `song name here`  
@@ -60,8 +61,8 @@ information about the searched movie.
 
 * Used APIs
     * [Bands in Town API](https://manager.bandsintown.com/support/bandsintown-api)
-    * Spotify API
-    * OMDB API
+    * [Spotify API](https://developer.spotify.com/documentation/web-api/)
+    * [OMDB API](http://www.omdbapi.com/)
 
 
 ## Version History
