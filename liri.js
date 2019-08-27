@@ -204,10 +204,10 @@ function movieThis(searchTerm) {
         .get(searchURL)
         .then(function(response) {
             //console.log("----------------------------");
-            console.log(response.data.Raitings);
+            //console.log(response.data.Raitings);
 
 
-            /* console.log("----------------------------");
+            console.log("----------------------------");
             console.log("Title: ", response.data.Title);
             console.log("Year: ", response.data.Year);
             console.log("IMDB Rating: ", response.data.imdbRating);
@@ -215,7 +215,7 @@ function movieThis(searchTerm) {
             console.log("Country: ", response.data.Country);
             console.log("Language: ", response.data.Language);
             console.log("Plot: ", response.data.Plot);
-            console.log("Actors: ", response.data.Actors);*/
+            console.log("Actors: ", response.data.Actors);
             
             console.log("----------------------------");
             
