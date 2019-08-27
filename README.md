@@ -30,6 +30,8 @@ information about the searched movie.
     * If you want to search for the event of a artist
     1. node liri.js concert-this `artist/band name here`
     !['1a. concert-this example command'](./assets/images/1a.-concert-this-example-command.png)
+    !['1a. concert-this example command'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/1a.-concert-this-example-command.PNG)
+    
     2. It returns a information about the upcoming events
     !['1b.concert-this-return'](./assets/images/1b.concert-this-return.png)
     
