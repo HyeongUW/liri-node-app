@@ -70,11 +70,11 @@ information about the searched movie.
 * Hyeong Suk Kim - whddkf2004@gmail.com
 
 ## Technologies used in the App
-•	Axios - To get the data from API
-•	Fs - To read and write program
-•	Javascript
-•	Moment - To format the date retrieved from API call
-•	Bands in Town, Spotify, and OMDB API
+* Axios - To get the data from API
+* Fs - To read and write program
+* Javascript
+* Moment - To format the date retrieved from API call
+* Bands in Town, Spotify, and OMDB API
 
 
 
