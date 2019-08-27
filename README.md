@@ -54,19 +54,20 @@ information about the searched movie.
 
 
 
-## Version History
- 
-* 0.1
-    * Initial Release
+
 
 ## License
+
 * Used APIs
-    * Bands in Town API 
+    * [Bands in Town API](https://manager.bandsintown.com/support/bandsintown-api)
     * Spotify API
     * OMDB API
 
 
-
+## Version History
+ 
+* 0.1
+    * Initial Release
 
 
 
