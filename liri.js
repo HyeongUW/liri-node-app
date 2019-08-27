@@ -145,7 +145,10 @@ function concertThis(searchTerm) {
 function spotifyThisSong(searchTerm) {
     console.log("spotifyThisSong executed");
     console.log("Search Term: " + searchTerm);
-    
+    if(!searchTerm) {
+        console.log("search term not provided");
+        searchTerm = "The Sign";
+    }
     
     spotify
         .search({ type: 'track', query: searchTerm })
@@ -197,9 +200,13 @@ function spotifyThisSong(searchTerm) {
 function movieThis(searchTerm) {
     console.log("movieThis executed");
     console.log("Search Term: " + searchTerm);
-    var searchURL = "http://www.omdbapi.com/?t=" + searchTerm + "&y=&plot=short&apikey=trilogy";
+    
     // console.log(searchURL);
-
+    if(!searchTerm) {
+        console.log("search term not provided");
+        searchTerm = "Mr. Nobody";
+    }
+    var searchURL = "http://www.omdbapi.com/?t=" + searchTerm + "&y=&plot=short&apikey=trilogy";
     axios
         .get(searchURL)
         .then(function(response) {
