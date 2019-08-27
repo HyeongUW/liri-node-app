@@ -29,27 +29,27 @@ information about the searched movie.
 * Navigate in to the folder where `liri.js` is using command line program you choose.
     * If you want to search for the event of a artist
     1. node liri.js concert-this `artist/band name here`
-    !['1a. concert-this example command'](./assets/images/1a.-concert-this-example-command.png)
+    !['1a. concert-this example command'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/1a.-concert-this-example-command.PNG)
     2. It returns a information about the upcoming events
-    !['1b.concert-this-return'](./assets/images/1b.concert-this-return.png)
+    !['1b.concert-this-return'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/1b.concert-this-return.png)
     
     * If you want to search for the related information of the song you like
     1. node liri.js spotify-this-song `song name here`  
-    !['2a.spotifyThisExample'](./assets/images/2a.spotifyThisExample.png)
+    !['2a.spotifyThisExample'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/2a.spotifyThisExample.png)
     2. It returns a information about the song
-    !['2b.spotifyReturns'](./assets/images/2b.spotifyReturns.png)
+    !['2b.spotifyReturns'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/2b.spotifyReturns.png)
 
     * If you want to search for the related information of the movie you like
     1. node liri.js movie-this `movie name here`
-    !['3a.movieExample'](./assets/images/3a.movieExample.png)
+    !['3a.movieExample'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/3a.movieExample.png)
     2. It returns a information about the movie
-    !['3b.movieReturns'](./assets/images/3b.movieReturns.png)
+    !['3b.movieReturns'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/3b.movieReturns.png)
 
     * If you want to search for the related information of the movie you like
     1. Need to change `random.txt` file in the format specified below
         * `spotify-this-song,"I Want it That Way"`
     2. node liri.js `do-what-it-says`
-    !['4a'](./assets/images/4a.png)   
+    !['4a'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/4a.png)   
     3. The result will be the one of the above.
 
 
