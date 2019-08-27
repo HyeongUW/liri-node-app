@@ -151,28 +151,31 @@ function spotifyThisSong(searchTerm) {
         .search({ type: 'track', query: searchTerm })
         .then(function(response) {
             //console.log(response); 
+            //console.log(response.tracks.items);
             //console.log(response.tracks.items.length);
+            //console.log(response.tracks.items[0].album.artists); 
             
-            for(var i = 0; i < response.tracks.items.length; i++) {
-                console.log("// Item " + (i + 1) + " ------------------------------------------------------------------------------------------");
-                console.log(response.tracks.items[i].album.artists);
-                
-                
 
-                /* // Working album name
-                //console.log("Album: ", response.tracks.items[i].album.name); */
-
-                //console.log(response.tracks.items[i].artists);
+            
+            /* console.log("Artist: ");
+            console.log("Song: ");
+            console.log("Preview: ", response.tracks.items[1].preview_url);
+            console.log("Album: ",  response.tracks.items[i].album.name) */
+            
+             for(var i = 0; i < response.tracks.items.length; i++) {
+                console.log("// Item " + (i + 1) + " ----------------------");
+                //console.log(response.tracks.items[i].album.artists); 
                 
-
-                //console.log("//----------------------------------------------------------------------------------------------------------------");
                 
-                //console.log(response.tracks.items[i].artists[external_urls].name);
-                //console.log(response.tracks.items[i].artists.external_urls);
+                console.log("Artist: ");
+                console.log("Song: ");
+                console.log("Preview: ", response.tracks.items[1].preview_url);
+                console.log("Album: ",  response.tracks.items[i].album.name)
+                
 
 
                 console.log("\n");
-            }
+            } 
         })
         .catch(function(err) {
             console.error('Error occurred: ' + err); 
@@ -191,42 +194,6 @@ function spotifyThisSong(searchTerm) {
         // Language of the movie.
         // Plot of the movie.
         // Actors in the movie.
- 
-/* 
-{ Title: 'The Avengers',
-  Year: '2012',
-  Rated: 'PG-13',
-  Released: '04 May 2012',
-  Runtime: '143 min',
-  Genre: 'Action, Adventure, Sci-Fi',
-  Director: 'Joss Whedon',
-  Writer:
-   'Joss Whedon (screenplay), Zak Penn (story), Joss Whedon (story)',
-  Actors:
-   'Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth',
-  Plot:
-   'Earth\'s mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.',
-  Language: 'English, Russian, Hindi',
-  Country: 'USA',
-  Awards: 'Nominated for 1 Oscar. Another 38 wins & 79 nominations.',
-  Poster:
-   'https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg',
-  Ratings:
-   [ { Source: 'Internet Movie Database', Value: '8.1/10' },
-     { Source: 'Rotten Tomatoes', Value: '92%' },
-     { Source: 'Metacritic', Value: '69/100' } ],
-  Metascore: '69',
-  imdbRating: '8.1',
-  imdbVotes: '1,191,030',
-  imdbID: 'tt0848228',
-  Type: 'movie',
-  DVD: '25 Sep 2012',
-  BoxOffice: '$623,279,547',
-  Production: 'Walt Disney Pictures',
-  Website: 'http://marvel.com/avengers_movie',
-  Response: 'True' }
-*/
-
 function movieThis(searchTerm) {
     console.log("movieThis executed");
     console.log("Search Term: " + searchTerm);
@@ -237,10 +204,10 @@ function movieThis(searchTerm) {
         .get(searchURL)
         .then(function(response) {
             //console.log("----------------------------");
-            console.log(response.data);
+            console.log(response.data.Raitings);
 
 
-            console.log("----------------------------");
+            /* console.log("----------------------------");
             console.log("Title: ", response.data.Title);
             console.log("Year: ", response.data.Year);
             console.log("IMDB Rating: ", response.data.imdbRating);
@@ -248,8 +215,7 @@ function movieThis(searchTerm) {
             console.log("Country: ", response.data.Country);
             console.log("Language: ", response.data.Language);
             console.log("Plot: ", response.data.Plot);
-            console.log("Actors: ", response.data.Actors);
-
+            console.log("Actors: ", response.data.Actors);*/
             
             console.log("----------------------------");
             
@@ -302,17 +268,6 @@ function doWhatItSays() {
 
 }
 
-
-//---------------------------------------------------
-
-// node liri.js concert-this <artist/band name here>
-// This will search the Bands in Town Artist Events API 
-// ("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp") 
-// for an artist and render the following information about each event to the terminal:
-
-//    * Name of the venue
-//    * Venue location
-//    * Date of the Event (use moment to format this as "MM/DD/YYYY")
 
 
 
