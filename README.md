@@ -49,23 +49,32 @@ information about the searched movie.
     1. Need to change `random.txt` file in the format specified below
         * `spotify-this-song,"I Want it That Way"`
     2. node liri.js `do-what-it-says`
+
     !['4a'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/4a.PNG)   
     3. The result will be the one of the above.
-
-
-
 
 ## Deployed Page:
 * Not available for this program. 
 
+## Enhancements
 
-
+* list of possible enhancements
+    1. Spotify API
+        1. `spotify-this-song` command does not show name of the artist and name of the song.
+        !['5'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/5.spotify-problem.PNG)   
+    2. OMDB API
+        1. `movie-this` command does now show the Rotten Tomato rating score       
 
 
 ## Authors
 * Hyeong Suk Kim - whddkf2004@gmail.com
 
-
+## Technologies used in the App
+•	Axios - To get the data from API
+•	Fs - To read and write program
+•	Javascript
+•	Moment - To format the date retrieved from API call
+•	Bands in Town, Spotify, and OMDB API
 
 
 
@@ -120,13 +129,7 @@ information about the searched movie.
 
 
 
-## Enhancements
 
-* list of possible enhancements
-    1. improved detail page layout
-    2. improved typography
-    3. make Save List modal available on Search and Detail pages
-    4. section with movie reviews (New York Time api)
     
 
  -->
