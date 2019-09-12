@@ -165,41 +165,37 @@ function spotifyThisSong(searchTerm) {
     spotify
         .search({ type: 'track', query: searchTerm })
         .then(function(response) {
+            //console.log(response.tracks.items);
 
-
-
+            
             fs.readFile("log.txt", "utf8", function(err, data) {
                 // If there's an error reading the file, we log it and return immediately
                 if (err) {
                   return console.log(err);
                 }
 
-                fs.appendFileSync("log.txt", "----------------------------\n");
+                
                 fs.appendFileSync("log.txt", ("spotify-this-song: " + searchTerm + " -> executed\n"));
 
                 for(var i = 0; i < response.tracks.items.length; i++) {
-                    console.log("----------------------------");
-                    
-                    console.log("Item" + (i + 1) + ".    Artist: " + "\n");
-                    fs.appendFileSync("log.txt", ("Item" + (i + 1) + ".    Artist: " + "\n"));
-                    
-                    console.log("Song: ");
-                    fs.appendFileSync("log.txt", ("      Song:  " + "\n"));
-
-                    console.log("Preview: ", response.tracks.items[1].preview_url);
-                    fs.appendFileSync("log.txt", ("      Preview:  " + response.tracks.items[1].preview_url + "\n"));
-
+                    console.log("\n----------------------------");
+                    console.log("Item " + (i + 1) + '.');
+                    console.log("Artist: " + response.tracks.items[i].artists.map(getArtistNames));
+                    console.log("Song: " + response.tracks.items[i].name);
+                    console.log("Preview: ", response.tracks.items[i].preview_url);
                     console.log("Album: ",  response.tracks.items[i].album.name)
-                    fs.appendFileSync("log.txt", ("      Album:  " + response.tracks.items[i].album.name + "\n"));
-
-
-                
-
                     console.log("----------------------------");
+
+                    fs.appendFileSync("log.txt", "\n----------------------------");
+                    fs.appendFileSync("log.txt", ("\nItem " + (i + 1) + '.\n'));
+                    fs.appendFileSync("log.txt", ("      Artist:  " + response.tracks.items[i].artists.map(getArtistNames) + "\n"));
+                    fs.appendFileSync("log.txt", ("      Song:  " + response.tracks.items[i].name + "\n"));
+                    fs.appendFileSync("log.txt", ("      Preview:  " + response.tracks.items[i].preview_url + "\n"));
+                    fs.appendFileSync("log.txt", ("      Album:  " + response.tracks.items[i].album.name + "\n"));
+                    fs.appendFileSync("log.txt", "----------------------------");
                 }
-                fs.appendFileSync("log.txt", "----------------------------\n");
-                
-            });            
+            }); 
+            
         })
         .catch(function(err) {
             console.error('Error occurred: ' + err); 
@@ -331,6 +327,12 @@ function doWhatItSays() {
 
 
 }
+
+
+// Helper function that gets the artist name
+var getArtistNames = function(artist) {
+    return artist.name;
+  };
 
 
 
