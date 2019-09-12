@@ -36,17 +36,23 @@ information about the searched movie.
     2. It returns a information about the upcoming events
     !['1b.concert-this-return'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/1b.concert-this-return.PNG)
     
+    <br/>
+
     * If you want to search for the related information of the song you like
     1. node liri.js spotify-this-song `song name here`  
     !['2a.spotifyThisExample'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/2a.spotifyThisExample.PNG)
     2. It returns a information about the song
     !['2b.spotifyReturns'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/2b.spotifyReturns.PNG)
 
+    <br/>
+
     * If you want to search for the related information of the movie you like
     1. node liri.js movie-this `movie name here`
     !['3a.movieExample'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/3a.movieExample.PNG)
     2. It returns a information about the movie
     !['3b.movieReturns'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/3b.movieReturns.PNG)
+
+    <br/>
 
     * If you want to search for the related information of the movie you like
     1. Need to change `random.txt` file in the format specified below
@@ -61,12 +67,15 @@ information about the searched movie.
 
 ## Enhancements
 
-* list of possible enhancements
-    1. Spotify API
-        1. `spotify-this-song` command does not show name of the artist and name of the song.
-        !['5'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/5.spotify-problem.PNG)   
-    2. OMDB API
-        1. `movie-this` command does now show the Rotten Tomato rating score       
+* ~~list of possible enhancements~~
+    1. ~~Spotify API~~
+        1. ~~`spotify-this-song` command does not show name of the artist and name of the song.~~
+        
+    2. ~~OMDB API~~
+        1. ~~`movie-this` command does now show the Rotten Tomato rating score~~     
+
+* Update(September 11, 2019)
+    1.  All the listed enhancements are implemented.
 
 
 ## Authors
