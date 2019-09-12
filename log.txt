@@ -1,142 +1,27 @@
-spotify-this-song: what is love? -> executed
-
 ----------------------------
-Item 1.
-      Artist:  Haddaway
-      Song:  What Is Love
-      Preview:  null
-      Album:  The Album
-----------------------------
-----------------------------
-Item 2.
-      Artist:  TWICE
-      Song:  What is Love?
-      Preview:  https://p.scdn.co/mp3-preview/8e942f1cea3700c5e94cfa6e66c9a07018074837?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  Summer Nights
+movie-this: Mr. Nobody -> executed
+Title: Mr. Nobody
+Year: 2009
+IMDB Rating: 7.8
+Rotten Tomatoes: 66%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
 ----------------------------
 ----------------------------
-Item 3.
-      Artist:  Foreigner
-      Song:  I Want to Know What Love Is - 1999 Remaster
-      Preview:  https://p.scdn.co/mp3-preview/cb8c1bc4a400807b09d60c5c7d7402acdfe79988?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  Agent Provocateur
+movie-this: avengerws infinity war -> executed
+Title: undefined
+Year: undefined
+IMDB Rating: undefined
 ----------------------------
-----------------------------
-Item 4.
-      Artist:  Clean Bandit,Julia Michaels
-      Song:  I Miss You (feat. Julia Michaels)
-      Preview:  https://p.scdn.co/mp3-preview/8ff021535ae4be15542c4d63361f0cbfee4956e6?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  What Is Love? (Deluxe Edition)
-----------------------------
-----------------------------
-Item 5.
-      Artist:  Clean Bandit,Zara Larsson
-      Song:  Symphony (feat. Zara Larsson)
-      Preview:  https://p.scdn.co/mp3-preview/25afd2d1ae43f4e90083b921d02ea793b4966518?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  What Is Love? (Deluxe Edition)
-----------------------------
-----------------------------
-Item 6.
-      Artist:  Clean Bandit,Demi Lovato
-      Song:  Solo (feat. Demi Lovato)
-      Preview:  https://p.scdn.co/mp3-preview/3012a9efa7581dbd4754aeb8eaa41be5d3eae219?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  What Is Love? (Deluxe Edition)
-----------------------------
-----------------------------
-Item 7.
-      Artist:  Hala
-      Song:  What Is Love? Tell Me, Is It Easy?
-      Preview:  https://p.scdn.co/mp3-preview/f697bf0e17eb197ca646bfc8c8d7c50684eb3e3c?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  Spoonfed
-----------------------------
-----------------------------
-Item 8.
-      Artist:  Clean Bandit,Ellie Goulding
-      Song:  Mama (feat. Ellie Goulding)
-      Preview:  https://p.scdn.co/mp3-preview/11efc4af3029f2553156c2385b42a042faf4fcdf?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  What Is Love? (Deluxe Edition)
-----------------------------
-----------------------------
-Item 9.
-      Artist:  Lady Gaga,Bradley Cooper
-      Song:  I Don't Know What Love Is
-      Preview:  null
-      Album:  A Star Is Born Soundtrack
-----------------------------
-----------------------------
-Item 10.
-      Artist:  Lady Gaga,Bradley Cooper
-      Song:  I Don't Know What Love Is
-      Preview:  null
-      Album:  A Star Is Born Soundtrack (Without Dialogue)
-----------------------------
-----------------------------
-Item 11.
-      Artist:  Rook1e
-      Song:  What Love Is, I Think
-      Preview:  https://p.scdn.co/mp3-preview/a8d6bccb1610a0b540c9381e2f6d52d66994438a?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  Discography
-----------------------------
-----------------------------
-Item 12.
-      Artist:  Jaymes Young
-      Song:  What Is Love
-      Preview:  https://p.scdn.co/mp3-preview/fc4fb6fc440b262fc403594dbb843a5fc4b7a4d5?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  What Is Love
-----------------------------
-----------------------------
-Item 13.
-      Artist:  Clean Bandit,Sean Paul,Anne-Marie
-      Song:  Rockabye (feat. Sean Paul & Anne-Marie)
-      Preview:  https://p.scdn.co/mp3-preview/6bd786feffe370eba207cf5992256a7c5bad8eac?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  What Is Love? (Deluxe Edition)
-----------------------------
-----------------------------
-Item 14.
-      Artist:  Clean Bandit,MARINA,Luis Fonsi
-      Song:  Baby (feat. MARINA & Luis Fonsi)
-      Preview:  https://p.scdn.co/mp3-preview/90fb466f9dcd22ac1ba85ceb70761d6c396f4f5c?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  What Is Love? (Deluxe Edition)
-----------------------------
-----------------------------
-Item 15.
-      Artist:  Irma Thomas
-      Song:  Anyone Who Knows What Love Is (Will Understand)
-      Preview:  null
-      Album:  Straight From The Soul
-----------------------------
-----------------------------
-Item 16.
-      Artist:  Empire Cast
-      Song:  What Is Love (feat. V. Bozeman)
-      Preview:  https://p.scdn.co/mp3-preview/d21e89fb8d601cad6f2d1393e6ddee3f9a020fd5?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  Original Soundtrack from Season 1 of Empire (Deluxe)
-----------------------------
-----------------------------
-Item 17.
-      Artist:  Gwen Stefani
-      Song:  Used To Love You
-      Preview:  null
-      Album:  This Is What The Truth Feels Like
-----------------------------
-----------------------------
-Item 18.
-      Artist:  Clean Bandit,Charli XCX,Bhad Bhabie
-      Song:  Playboy Style (feat. Charli XCX & Bhad Bhabie)
-      Preview:  https://p.scdn.co/mp3-preview/4d55f58d5007f651ed56b0a5c9dae7b2fef4237b?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  What Is Love? (Deluxe Edition)
-----------------------------
-----------------------------
-Item 19.
-      Artist:  Yungeen Ace
-      Song:  What is Love
-      Preview:  https://p.scdn.co/mp3-preview/247b08f4e4f2f7ff30f24c7261d2928f9efc82e4?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  Chloe
-----------------------------
-----------------------------
-Item 20.
-      Artist:  Never Shout Never
-      Song:  Can't Stand It
-      Preview:  https://p.scdn.co/mp3-preview/bda093ce2e41fe2992b0626b5ac9428bee0d4d78?cid=a0ebed1fc7454471ba27bc6f51d76187
-      Album:  What Is Love?
+movie-this: avengers infinity war -> executed
+Title: Avengers: Infinity War
+Year: 2018
+IMDB Rating: 8.5
+Rotten Tomatoes: 85%
+Country: USA
+Language: English
+Plot: The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.
+Actors: Robert Downey Jr., Chris Hemsworth, Mark Ruffalo, Chris Evans
 ----------------------------

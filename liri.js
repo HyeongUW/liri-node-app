@@ -216,14 +216,16 @@ function spotifyThisSong(searchTerm) {
         // Actors in the movie.
 function movieThis(searchTerm) {
     console.log("movieThis executed");
-    console.log("Search Term: " + searchTerm);
+    
     
     // console.log(searchURL);
     if(!searchTerm) {
         console.log("search term not provided");
         searchTerm = "Mr. Nobody";
     }
+    console.log("Search Term: " + searchTerm);
     var searchURL = "http://www.omdbapi.com/?t=" + searchTerm + "&y=&plot=short&apikey=trilogy";
+    
     axios
         .get(searchURL)
         .then(function(response) {
@@ -235,7 +237,7 @@ function movieThis(searchTerm) {
             console.log("Title: ", response.data.Title);
             console.log("Year: ", response.data.Year);
             console.log("IMDB Rating: ", response.data.imdbRating);
-            //console.log("Rotten Tomatoes: ", response.data.Raitings);
+            console.log("Rotten Tomatoes: ", response.data.Ratings[1].Value);
             console.log("Country: ", response.data.Country);
             console.log("Language: ", response.data.Language);
             console.log("Plot: ", response.data.Plot);
@@ -243,11 +245,14 @@ function movieThis(searchTerm) {
             
             console.log("----------------------------"); */
 
+            
+
             fs.readFile("log.txt", "utf8", function(err, data) {
                 // If there's an error reading the file, we log it and return immediately
                 if (err) {
                   return console.log(err);
                 }
+                console.log("\n----------------------------");
 
                 fs.appendFileSync("log.txt", "----------------------------\n");
                 fs.appendFileSync("log.txt", ("movie-this: " + searchTerm + " -> executed\n"));
@@ -261,8 +266,8 @@ function movieThis(searchTerm) {
                 console.log("IMDB Rating: ", response.data.imdbRating);
                 fs.appendFileSync("log.txt", ("IMDB Rating: " + response.data.imdbRating + "\n"));
 
-                //console.log("Rotten Tomatoes: ", response.data.Raitings);
-                //fs.appendFileSync("log.txt", ("Rotten Tomatoes: " + response.data.Raitings + "\n"));
+                console.log("Rotten Tomatoes: ", response.data.Ratings[1].Value);
+                fs.appendFileSync("log.txt", ("Rotten Tomatoes: " + response.data.Ratings[1].Value + "\n"));
                 
                 console.log("Country: ", response.data.Country);
                 fs.appendFileSync("log.txt", ("Country: " + response.data.Country + "\n"));
@@ -278,6 +283,7 @@ function movieThis(searchTerm) {
 
                 fs.appendFileSync("log.txt", "----------------------------\n");
                 
+                console.log("----------------------------");
             });                       
         })
   
