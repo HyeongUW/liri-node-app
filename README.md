@@ -21,7 +21,7 @@ information about the searched movie.
 
 ### Dependencies
 
-* This node application uses command line tool (ex. git bash, termainal) to execute program.
+* This node application uses command line interface (ex. git bash, termainal) to execute program.
 
 ### Installing
 
@@ -29,7 +29,7 @@ information about the searched movie.
 
 ### Executing program
 
-* Navigate in to the file `liri.js` using command line program you choose.
+* Navigate in to the file `liri.js` using command line interface you choose.
     1. If you want to search for the event of a artist
         1. node liri.js concert-this `artist/band name here`
         !['1a. concert-this example command'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/1a.-concert-this-example-command.PNG)
