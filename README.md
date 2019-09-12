@@ -25,7 +25,7 @@ information about the searched movie.
 
 ### Installing
 
-* Git Bash, Or Any types of Command Line Program
+* Git Bash, Or Any types of Command Line Interface of your choose
 
 ### Executing program
 
@@ -56,7 +56,7 @@ information about the searched movie.
 
     4. If you want to search for the related information of the movie you like
         1. Need to change `random.txt` file in the format specified below
-            * `spotify-this-song,"I Want it That Way"`
+            * e.g.  `spotify-this-song,"I Want it That Way"`
         2. node liri.js `do-what-it-says`
         !['4a'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/4a.PNG)   
         3. The result will be the one of the above.
