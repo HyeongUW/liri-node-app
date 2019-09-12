@@ -29,7 +29,7 @@ information about the searched movie.
 
 ### Executing program
 
-* Navigate in to the folder where `liri.js` is using command line program you choose.
+* Navigate in to the file `liri.js` using command line program you choose.
     * If you want to search for the event of a artist
     1. node liri.js concert-this `artist/band name here`
     !['1a. concert-this example command'](https://github.com/HyeongUW/liri-node-app/blob/master/assets/images/1a.-concert-this-example-command.PNG)
