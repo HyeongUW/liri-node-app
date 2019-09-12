@@ -1,6 +1,6 @@
-# liri-node-app
+# LIRI (Language Interpretation and Recognition Interface)
 
-LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
+Node.js application for concert, song, movie search.
 
 ## Description
  
@@ -13,6 +13,9 @@ the information about the artist of the song.
 * A user can search the OMDB API for the movie and render  
 information about the searched movie.                   
 * A user can edit the `random.txt` to use it to call one of LIRI's commands.                  
+
+### Additional Features
+* All submitted commands and output will be appended to log.txt
 
 ## Getting Started
 
