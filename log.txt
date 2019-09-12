@@ -166,4 +166,14 @@ Item 20.
       Song:  Can't Stand It
       Preview:  https://p.scdn.co/mp3-preview/bda093ce2e41fe2992b0626b5ac9428bee0d4d78?cid=a0ebed1fc7454471ba27bc6f51d76187
       Album:  What Is Love?
+--------------------------------------------------------
+movie-this: avengers -> executed
+Title: The Avengers
+Year: 2012
+IMDB Rating: 8.0
+Rotten Tomatoes: 92%
+Country: USA
+Language: English, Russian, Hindi
+Plot: Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.
+Actors: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth
 ----------------------------
